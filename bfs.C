@@ -70,8 +70,7 @@ int main(int argc, char* argv[]) {
 
   size_t nodes=64;
   if(argc  > 1) {
-    int temp = 0;
-    temp = atoi(argv[1]);
+    int temp=atoi(argv[1]);
     if(temp > 0) nodes = static_cast<size_t>(temp);
   }
   std::vector<NodePtr_t> myVector;
